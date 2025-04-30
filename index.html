@@ -12,19 +12,99 @@
 <body>
   <nav>
     <a href="index.html">Home</a>
-    <a href="comic.html">Comic</a>
+    <!-- <a href="comic.html">Comic</a> -->
     <a href="about.html">About</a>
   </nav>
   <main>
-    <h1>Welcome to My Webcomic!</h1>
-    <p>Follow along as I share my journey through storytelling and art.</p>
+    <h1>Welcome to the website for <br> ENGLBC1088 - THE WEBCOMICS REVOLUTION</h1>
+    <p>This is where you can find everyone's comics and read the work that students have put in all semester. Enjoy!</p>
 
-    <h2>Want to see some of my favorite comics? See below!</h2>
-    <div class="favorite-comic">
-      <a href="https://www.peanuts.com/about/snoopy" target="_blank">
-        <img src="images/snoopy.avif" alt="Snoopy from Peanuts" class="featured-comic" />
-      </a>
+    <div class="random-button-wrapper">
+      <button class="random-button" onclick="goToRandomComic()">READ A COMIC HERE!</button>
     </div>
+
+    <h1>Student Comic Gallery</h1>
+
+    <div class="gallery">
+      <div class="card">
+        <a class="comic-title" href="https://vww2108.github.io/VWW_Final_web_comic/" target="_blank">The Cohow</a>
+        <div class="author">by Victoria W</div>
+      </div>
+      <div class="card">
+        <a class="comic-title" href="https://kyra-rk.github.io/the-interpreter/index.html" target="_blank">The Interpreter</a>
+        <div class="author">by Kyra</div>
+      </div>
+      <div class="card">
+        <a class="comic-title" href="https://wren-p.github.io/BIG_BLACK_SKY/" target="_blank">BIG BLACK SKY</a>
+        <div class="author">by Wren</div>
+      </div>
+      <div class="card">
+        <a class="comic-title" href="https://arie5codes.github.io/deepdark/" target="_blank">Deep Dark</a>
+        <div class="author">by Ariela</div>
+      </div>
+      <div class="card">
+        <a class="comic-title" href="https://yunsoup.github.io/adventures/" target="_blank">Adventures of a Shapeshifter</a>
+        <div class="author">by Kathleen</div>
+      </div>
+      <div class="card">
+        <a class="comic-title" href="https://annareese.github.io/day0/" target="_blank">day0</a>
+        <div class="author">by Anna</div>
+      </div>
+      <div class="card">
+        <a class="comic-title" href="https://jemh-05.github.io/The_Miraculous_Misadventures_of_Juniper_Witch/" target="_blank">The Miraculous Misadventures of Juniper Witch</a>
+        <div class="author">by Jem</div>
+      </div>
+      <div class="card">
+        <a class="comic-title" href="https://ashleybehm.github.io/webcomic_2/" target="_blank">Basement Dreams</a>
+        <div class="author">by Ashley</div>
+      </div>
+      <div class="card">
+        <a class="comic-title" href="https://anamaggiolo.github.io/samplewebsite/" target="_blank">tbd</a>
+        <div class="author">by Ana M</div>
+      </div>
+      <div class="card">
+        <a class="comic-title" href="https://rubykaminsky.github.io/rmkproject/index.html" target="_blank">TBD</a>
+        <div class="author">by Ruby Kaminsky</div>
+      </div>
+      <div class="card">
+        <a class="comic-title" href="https://github.com/LauraCeladon/The_Cast_List/new/main?readme=1" target="_blank">The Cast List</a>
+        <div class="author">by Laura Celadon</div>
+      </div>
+      <div class="card">
+        <a class="comic-title" href="https://idumontier.github.io/isaacwebcomic/" target="_blank">Vern&amp;Erik</a>
+        <div class="author">by Isaac</div>
+      </div>
+      <div class="card">
+        <a class="comic-title" href="https://ss33christie.github.io/Webcomic-/index.html" target="_blank">Tappy’s Cat-titude Problem</a>
+        <div class="author">by Christine</div>
+      </div>
+    </div>
+  
+
   </main>
+
+  <script>
+    function goToRandomComic() {
+      const comicLinks = [
+        "https://vww2108.github.io/VWW_Final_web_comic/",
+        "https://kyra-rk.github.io/the-interpreter/index.html",
+        "https://wren-p.github.io/BIG_BLACK_SKY/",
+        "https://arie5codes.github.io/deepdark/",
+        "https://yunsoup.github.io/adventures/",
+        "https://annareese.github.io/day0/",
+        "https://jemh-05.github.io/The_Miraculous_Misadventures_of_Juniper_Witch/",
+        "https://ashleybehm.github.io/webcomic_2/",
+        "https://anamaggiolo.github.io/samplewebsite/",
+        "https://rubykaminsky.github.io/rmkproject/index.html",
+        "https://github.com/LauraCeladon/The_Cast_List/new/main?readme=1",
+        "https://idumontier.github.io/isaacwebcomic/",
+        "https://ss33christie.github.io/Webcomic-/index.html"
+      ];
+
+      const randomIndex = Math.floor(Math.random() * comicLinks.length);
+      window.open(comicLinks[randomIndex], "_blank");
+    }
+  </script>
+
 </body>
 </html>

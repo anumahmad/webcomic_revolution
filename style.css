@@ -81,7 +81,62 @@ h1, h2 {
   color: #7a3b3b;
 }
 
+h1 {
+  text-align: center;
+}
+
 p {
   line-height: 1.6;
   color: #4b4b4b;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.comic-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #0066cc;
+  text-decoration: none;
+}
+.comic-title:hover {
+  text-decoration: underline;
+}
+.author {
+  font-style: italic;
+  color: #666;
+  margin-top: 5px;
+}
+
+.random-button-wrapper {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.random-button {
+  background-color: #0077cc;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.1em;
+  font-family: "Grandstander", sans-serif;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.random-button:hover {
+  background-color: #005fa3;
 }
